@@ -26,6 +26,29 @@ is the slightly modified version of Ladsaria and Patel's LCC for use at Dartmout
 
 ##Installation Instructions
 
+###Installation Notes:
+
+```bash
+git clone git@github.com:lkoepsel/lcc-lc3.git
+cd lcc-lc3
+./configure
+make
+make install
+echo 'export PATH="$HOME/.lc3:$PATH"' >> /home/lkoepsel/.bashrc
+source ~/.bashrc
+cd ..
+mkdir lc3
+nano main.c
+void main()
+{
+	int a=1;
+	int b=2;
+	int c = a + b;
+}
+lcc -L main.c -o main.asm
+```
+
+
 First, you must install the [LC3 Tools](https://github.com/haplesshero13/lc3tools) to have `lc3as`.
 
 Download and unpack this source, either with `git clone git://github.com/haplesshero13/lc3tools.git` or by clicking on the ZIP download button at the top of this github page.

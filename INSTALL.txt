@@ -1,3 +1,26 @@
+Installation Notes:
+
+```bash
+git clone git@github.com:lkoepsel/lcc-lc3.git
+cd lcc-lc3
+./configure
+make
+make install
+echo 'export PATH="$HOME/.lc3:$PATH"' >> /home/lkoepsel/.bashrc
+source ~/.bashrc
+cd ..
+mkdir lc3
+nano main.c
+void main()
+{
+	int a=1;
+	int b=2;
+	int c = a + b;
+}
+lcc -L main.c -o main.asm
+```
+
+
 Basic Installation
 ==================
 
