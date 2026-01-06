@@ -18,8 +18,8 @@ YYCONST static char yysccsid[] = "@(#)yaccpar	1.8 (Berkeley +Cygnus.28) 01/20/91
 #ifndef YYDONT_INCLUDE_STDIO
 #include <stdio.h>
 #endif
-#ifdef __cplusplus
 #include <stdlib.h> /* for malloc/realloc/free */
+#ifdef __cplusplus
 #endif
 #line 2 "lburg/gram.y"
 #include <stdio.h>
